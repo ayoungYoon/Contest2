@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>AI 혼합 직업 추천기</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>🌟 AI 혼합 직업 추천기</h1>
+  <form id="recommendation-form">
+    <div>
+      <label>당신의 성향을 입력해주세요:</label><br>
+      <input type="text" id="user_input" required>
+    </div>
+    <div>
+      <label>거주하는 시군구를 입력해주세요 (예: 서울 종로구):</label><br>
+      <input type="text" id="region" required>
+    </div>
+    <button type="submit">🔍 추천받기</button>
+  </form>
+
+  <div id="result" style="display:none">
+    <h2>🧠 흥미유형: <span id="type"></span></h2>
+    <h3>🏭 지역 산업 TOP3:</h3>
+    <ul id="industries"></ul>
+    <h3>🧒 청소년 선호 직군:</h3>
+    <ul id="youth_jobs"></ul>
+    <h3>💼 추천 직업 목록:</h3>
+    <ul id="recommended_jobs"></ul>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
